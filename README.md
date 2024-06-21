@@ -59,3 +59,7 @@ Flatten()
 Dense(128, activation='relu')
 Dropout(0.5)
 Dense(4, activation='softmax')  # 4 classes
+
+```
+
+[image](https://github.com/mustafasm99/guipyside/blob/main/usedImages/Figure_1.png?raw=true)
