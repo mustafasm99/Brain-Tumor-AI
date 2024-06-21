@@ -1,0 +1,85 @@
+QListWidget {
+     color: #FFFFFF;
+     background-color: #33373B;
+ }
+ 
+ QListWidget::item {
+     height: 100px;
+     font-size: 25px;
+ }
+ 
+ QListWidget::item:selected {
+     background-color: #2ABf9E;
+     color: black;
+     font-size: 25px;
+ }
+ 
+ QLabel {
+     background-color: #FFFFFF;
+     qproperty-alignment: AlignCenter;
+ }
+ 
+ QPushButton {
+     background-color: #2ABf9E;
+     padding: 20px;
+     font-size: 18px;
+ }
+ QVBoxLayout#fileInput{
+    background-color: red;
+    font-size: 22px;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+ }
+#fileButton{
+    background-color: #2ABf9E;
+    color: white;
+    padding: 10px;
+    height: 70px;
+ }
+ #mainText{
+    color: black;
+    font-size: 24px;
+    font-weight: 900;
+ }
+ #fileLabel{
+    color: white;
+    font-size: 22px;
+    background-color: black;
+ }
+ #anaLabel{
+    color: black;
+    font-size: 30px;
+    font-weight: 500;
+ }
+#resultLabel{
+    background-color: white;
+    color: black;
+    font-weight: 750;
+}
+#anaLabelR{
+    font-size: 12px;
+    text-align: justify;
+    color: black;
+    background-color: white;
+}
+#newHolder{
+    background-color: white;
+}
+#ResultGroup{
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    /* padding: 5px; */
+    border: 2px solid gray;
+    border-radius: 15px;
+}
+#ResultGroup::title {
+    /* font-size: 8px;
+    font-weight: 850; */
+    
+    color: darkblue;
+    /* background-color: white;
+    border-radius: 12px;
+    padding: 5px 8px; */
+}

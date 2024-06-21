@@ -1,0 +1,1 @@
+print(" geting result is under process ")
