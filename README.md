@@ -62,4 +62,4 @@ Dense(4, activation='softmax')  # 4 classes
 
 ```
 
-[image](https://github.com/mustafasm99/guipyside/blob/main/usedImages/Figure_1.png?raw=true)
+![image](https://github.com/mustafasm99/guipyside/blob/main/usedImages/Figure_1.png?raw=true)
