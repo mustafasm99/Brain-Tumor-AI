@@ -61,12 +61,13 @@ class BarChartSVM(QWidget):
           self.layout.addWidget(self._chart_view)
           text = ""
           for index,data in enumerate(self.names):
+               print(data)
                text += f"""
                     {data} : {self.predicted_classes[index]}
                     """
           self.label  = QLabel(text)
           self.label.setObjectName("anaLabelR")
-          
+          text = ""
           self.layout.addWidget(self.label)
           self.setLayout(self.layout)
           

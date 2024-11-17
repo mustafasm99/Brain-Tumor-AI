@@ -58,9 +58,10 @@ class Worker(QRunnable):
                     
                     
                elif self.name == "SVM-Poly-Dwt":
-                    print("RPF-DWT is working")
+                    print("SVM-POLY-DWT is working")
                     r = POLY_DWT(path=self.path)
                     result = r.run()
+                    print(result)
                     self.signals.result_ready.emit(result)
                
                elif self.name == "CNN":
@@ -81,6 +82,7 @@ class Worker(QRunnable):
                     print(self.name)
           
           except Exception as e:
+               print("Error ===========>")
                self.signals.error.emit(str(e))
           finally:
                self.signals.finished.emit()

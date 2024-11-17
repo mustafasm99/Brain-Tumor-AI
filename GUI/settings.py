@@ -16,10 +16,13 @@ def set_path(text:str=None):
      settings['path'] = text
 
 def clear_layout(layout):
-     while layout.count():
-          item = layout.takeAt(0)
-          widget = item.widget()
-          if widget is not None:
-               widget.deleteLater()
-          else:
-               layout.removeItem(item)
+    """Recursively clear all widgets and sub-layouts from a layout."""
+    if layout is not None:
+        while layout.count():
+            print("clearing layout: ", layout)
+            item = layout.takeAt(0)
+            widget = item.widget()
+            if widget is not None:
+                widget.deleteLater()
+            elif item.layout() is not None:
+                clear_layout(item.layout())
